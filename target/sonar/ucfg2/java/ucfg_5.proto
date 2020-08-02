@@ -1,69 +1,0 @@
-
-Lco.com.facturas.soap.CalculadoraImpl#multiplierOperation()Ljava/lang/String;y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java8 8(""5*…
-2y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java; ;(®
-«
-y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java; ;( 
-dco.com.facturas.model.Datos"__id*
-""Ë
-È
-y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java; ;( 
-dco.com.facturas.model.Datos"
-__arrayGet*
-
-%2java.util.Set*
-""*
-3
-1*ê
-3y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java< <(
-äá
-y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java< <(
-%3float"'co.com.facturas.model.Datos#getDatos()F*"
- 
-dco.com.facturas.model.Datos2
-getDatos()*
-2*Ù
-4y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java; ;(Ó
-Ð
-y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java; ;(
-%2java.util.Set"__id*8*6&
-$co.com.facturas.soap.CalculadoraImpl"
-
-arrayDatos*
-2*¨
-5y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java9 9(Ó
-Ð
-y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java: :(
-%0java.util.Set"__id*8*6&
-$co.com.facturas.soap.CalculadoraImpl"
-
-arrayDatosÉÆ
-y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.java: :(
-%1boolean"java.util.Set#isEmpty()Z*
-
-%0java.util.Set2	isEmpty()*
-4
-1*ü
-1y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.javaA	 A(ã
-à
-y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.javaA	 A(
-%4java.lang.String"-java.lang.String#valueOf(F)Ljava/lang/String;*"
-java.lang.String*
-"""•
-y
-oE:/Repositories GitHub/Workspace_Java/JAXWS_SOAP_Server/src/main/java/co/com/facturas/soap/CalculadoraImpl.javaA A( 
-
-%4java.lang.StringB(&
-$co.com.facturas.soap.CalculadoraImpl
