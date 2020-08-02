@@ -85,7 +85,7 @@
 					<configuration>
 						<branchName>master</branchName>
 						<pushChanges>true</pushChanges>
-						<localCheckout>true</localCheckout>
+						<localCheckout>false</localCheckout>
 					</configuration>
 				</plugin>
 				<!-- Plugins Maven -->
