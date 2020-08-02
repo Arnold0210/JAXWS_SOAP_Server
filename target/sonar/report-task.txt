@@ -1,7 +1,7 @@
 organization=arnold0210-github
 projectKey=co.com.facturas:JAXWS_SOAP_Server
 serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.10180
+serverVersion=8.0.0.10283
 dashboardUrl=https://sonarcloud.io/dashboard?id=co.com.facturas%3AJAXWS_SOAP_Server
-ceTaskId=AXOjWRb7sgXeIKrO-9_Z
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXOjWRb7sgXeIKrO-9_Z
+ceTaskId=AXOt1F3PKWfXScLHrlRo
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXOt1F3PKWfXScLHrlRo
