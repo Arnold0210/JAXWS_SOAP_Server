@@ -1,22 +1,24 @@
 package co.com.facturas.soap;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Vector;
 
 import javax.jws.WebService;
+//import javax.xml.ws.WebServiceProvider;
+
+//import javax.jws.WebService;
 
 import co.com.facturas.model.Datos;
 
-@WebService(endpointInterface = "co.com.facturas.soap.CalculadoraInterface", name = "CalculadoraWS", serviceName = "CalculadoraSOAP", targetNamespace = "http://facturas.com.co")
+@WebService(endpointInterface = "co.com.facturas.soap.CalculadoraInterface", name = "CalculadoraWS", serviceName = "CalculadoraSOAP", targetNamespace = "http://calculadora.facturas.com.co")
 public class CalculadoraImpl implements CalculadoraInterface {
 
-	private static Set<Datos> arrayDatos = new HashSet<>();
+	private static Vector<Datos> arrayDatos = new Vector<>();
 
-	public static Set<Datos> getArrayDatos() {
+	public static Vector<Datos> getArrayDatos() {
 		return arrayDatos;
 	}
 
-	public static void setArrayDatos(Set<Datos> arrayDatos) {
+	public static void setArrayDatos(Vector<Datos> arrayDatos) {
 		CalculadoraImpl.arrayDatos = arrayDatos;
 	}
 
@@ -78,7 +80,7 @@ public class CalculadoraImpl implements CalculadoraInterface {
 	}
 
 	@Override
-	public Set<Datos> mostrarDatos() {
+	public Vector<Datos> mostrarDatos() {
 		return arrayDatos;
 	}
 
