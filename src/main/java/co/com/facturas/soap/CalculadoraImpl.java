@@ -1,30 +1,31 @@
 package co.com.facturas.soap;
 
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.jws.WebService;
-//import javax.xml.ws.WebServiceProvider;
-
-//import javax.jws.WebService;
 
 import co.com.facturas.model.Datos;
+import co.com.facturas.util.TipoLog;
+import co.com.facturas.util.Util;
 
 @WebService(endpointInterface = "co.com.facturas.soap.CalculadoraInterface", name = "CalculadoraWS", serviceName = "CalculadoraSOAP", targetNamespace = "http://calculadora.facturas.com.co")
 public class CalculadoraImpl implements CalculadoraInterface {
 
-	private static Vector<Datos> arrayDatos = new Vector<>();
+	private static ArrayList<Datos> arrayDatos = new ArrayList<>();
 
-	public static Vector<Datos> getArrayDatos() {
+	public static List<Datos> getArrayDatos() {
 		return arrayDatos;
 	}
 
-	public static void setArrayDatos(Vector<Datos> arrayDatos) {
-		CalculadoraImpl.arrayDatos = arrayDatos;
+	public static void setArrayDatos(List<Datos> arrayDatos) {
+		CalculadoraImpl.arrayDatos = (ArrayList<Datos>) arrayDatos;
 	}
 
 	@Override
 	public String leerDatos(Datos dato) {
 		arrayDatos.add(dato);
+		Util.registarInfo(CalculadoraImpl.class, TipoLog.DEBUG, dato.getDatos());
 		return "Número " + dato.getDatos() + " almacenado correctamente";
 	}
 
@@ -80,7 +81,7 @@ public class CalculadoraImpl implements CalculadoraInterface {
 	}
 
 	@Override
-	public Vector<Datos> mostrarDatos() {
+	public ArrayList<Datos> mostrarDatos() {
 		return arrayDatos;
 	}
 

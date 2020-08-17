@@ -1,4 +1,7 @@
-co\com\facturas\soap\CalculadoraInterface.class
-co\com\facturas\CalculadoraPublish.class
 co\com\facturas\model\Datos.class
+co\com\facturas\util\Util$1.class
+co\com\facturas\soap\CalculadoraInterface.class
+co\com\facturas\util\TipoLog.class
+co\com\facturas\CalculadoraPublish.class
+co\com\facturas\util\Util.class
 co\com\facturas\soap\CalculadoraImpl.class

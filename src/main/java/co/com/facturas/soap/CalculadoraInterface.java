@@ -1,6 +1,6 @@
 package co.com.facturas.soap;
 
-import java.util.Vector;
+import java.util.List;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -56,6 +56,6 @@ public interface CalculadoraInterface {
 	@WebResult(name = "Listado_de_datos", targetNamespace = "http://calculadora.facturas.com.co")
 	@RequestWrapper(localName = "calcOperacionMostrarDatos", targetNamespace = "http://calculadora.facturas.com.co", className = "co.com.facturas.soap.jaxws.MostrarDatos")
 	@ResponseWrapper(localName = "ListarDatosResponse", targetNamespace = "http://calculadora.facturas.com.co", className = "co.com.facturas.soap.jaxws.MostrarDatosResponse")
-	public Vector<Datos> mostrarDatos();
+	public List<Datos> mostrarDatos();
 
 }
