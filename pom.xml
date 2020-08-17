@@ -104,7 +104,6 @@
 						<pushChanges>true</pushChanges>
 						<tagNameFormat>v-@{version}</tagNameFormat>
 						<localCheckout>false</localCheckout>
-						<preparationGoals>clean verify sonar:sonar</preparationGoals>
 						<checkModificationExcludes>
 							<checkModificationExclude>release-pom.xml</checkModificationExclude>
 						</checkModificationExcludes>
