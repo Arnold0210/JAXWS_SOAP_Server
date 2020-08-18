@@ -1,5 +1,6 @@
 package co.com.facturas.util;
 
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 public class Util {
@@ -9,40 +10,26 @@ public class Util {
 		throw new IllegalStateException("Utiility Class");
 	}
 
-	protected final static Logger log = Logger.getLogger(Util.class);
-
-	private static Logger getLogger() {
-		if (log == null) {
-			try {
-				new Util();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-		return log;
-	}
+	protected static Logger log = Logger.getLogger(Util.class);
 
 	public static void registarInfo(Class<?> clazz, TipoLog tipo, Object message) {
-
+		log = LogManager.getLogger(clazz);
 		switch (tipo) {
 		case DEBUG:
-			if (getLogger().isDebugEnabled()) {
-				getLogger().debug(message.toString());
-			}
+			log.debug(message.toString());
 			break;
 		case ERROR:
-			getLogger().error(message.toString());
+			log.error(message.toString());
 			break;
 		case FATAL:
-			getLogger().fatal(message.toString());
+			log.fatal(message.toString());
 			break;
 		case INFO:
-			getLogger().info(message.toString());
+			log.info(message.toString());
 			break;
 		case WARNING:
-			getLogger().warn(message.toString());
+			log.warn(message.toString());
 			break;
-
 		}
 	}
 
