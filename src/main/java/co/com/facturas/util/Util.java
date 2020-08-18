@@ -2,34 +2,45 @@ package co.com.facturas.util;
 
 import org.apache.log4j.Logger;
 
-//import org.apache.log4j.xml.DOMConfigurator;
-
 public class Util {
 
 	private Util() {
+
 		throw new IllegalStateException("Utiility Class");
 	}
 
-	@SuppressWarnings({ "rawtypes" })
-	public static void registarInfo(Class clase, TipoLog tipo, Object message) {
-		// DOMConfigurator.configure("src/main/resources/log4j.properties");
-		Logger log = Logger.getLogger(clase);
+	protected final static Logger log = Logger.getLogger(Util.class);
+
+	private static Logger getLogger() {
+		if (log == null) {
+			try {
+				new Util();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return log;
+	}
+
+	public static void registarInfo(Class<?> clazz, TipoLog tipo, Object message) {
 
 		switch (tipo) {
 		case DEBUG:
-			log.debug(message);
+			if (getLogger().isDebugEnabled()) {
+				getLogger().debug(message.toString());
+			}
 			break;
 		case ERROR:
-			log.error(message);
+			getLogger().error(message.toString());
 			break;
 		case FATAL:
-			log.fatal(message);
+			getLogger().fatal(message.toString());
 			break;
 		case INFO:
-			log.info(message);
+			getLogger().info(message.toString());
 			break;
 		case WARNING:
-			log.warn(message);
+			getLogger().warn(message.toString());
 			break;
 
 		}

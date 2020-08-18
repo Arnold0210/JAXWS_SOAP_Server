@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>co.com.facturas</groupId>
 	<artifactId>JAXWS_SOAP_Server</artifactId>
-	<version>1.0.3-SNAPSHOT</version>
+	<version>1.0.4-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>JAXWS_SOAP_Server Maven Webapp</name>
 	<!-- change it to the project's website -->
@@ -189,7 +191,7 @@
 				<sonar.login>3d0c3c24a1501300ef57a41ec8fa3d4e105aa23a</sonar.login>
 				<sonar.scm.provider>git</sonar.scm.provider>
 				<sonar.pullrequest.provider>github</sonar.pullrequest.provider>
-				<sonar.pullrequest.github.repository />
+				<sonar.pullrequest.github.repository>https://github.com/Arnold0210/JAXWS_SOAP_Server</sonar.pullrequest.github.repository>
 			</properties>
 		</profile>
 	</profiles>

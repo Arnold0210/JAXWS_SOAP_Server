@@ -26,6 +26,8 @@ public class CalculadoraImpl implements CalculadoraInterface {
 	public String leerDatos(Datos dato) {
 		arrayDatos.add(dato);
 		Util.registarInfo(CalculadoraImpl.class, TipoLog.DEBUG, dato.getDatos());
+		Util.registarInfo(Util.class, TipoLog.DEBUG, dato.getDatos());
+		
 		return "Número " + dato.getDatos() + " almacenado correctamente";
 	}
 
