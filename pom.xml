@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>co.com.facturas</groupId>
 	<artifactId>JAXWS_SOAP_Server</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>JAXWS_SOAP_Server Maven Webapp</name>
 	<!-- change it to the project's website -->
@@ -106,6 +106,7 @@
 						<localCheckout>false</localCheckout>
 						<checkModificationExcludes>
 							<checkModificationExclude>release-pom.xml</checkModificationExclude>
+							<checkModificationExclude>target/</checkModificationExclude>
 						</checkModificationExcludes>
 					</configuration>
 				</plugin>
@@ -187,7 +188,10 @@
 				<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 				<sonar.organization>arnold0210-github</sonar.organization>
 				<sonar.projectkey>co.com.facturas:JAXWS_SOAP_Server</sonar.projectkey>
-				<sonar.login>bba6ee3ea5b4f7f7af56b1688fdb80f1c03de808</sonar.login>
+				<sonar.login>fde44a454dbb0aee1e604103deef436a859de338 </sonar.login>
+				<sonar.scm.provider>git</sonar.scm.provider>
+				<sonar.pullrequest.provider>github</sonar.pullrequest.provider>
+				<sonar.pullrequest.github.repository></sonar.pullrequest.github.repository>
 			</properties>
 		</profile>
 	</profiles>
