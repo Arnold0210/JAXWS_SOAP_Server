@@ -1,7 +1,10 @@
 package co.com.facturas.util;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+//import org.apache.log4j.LogManager;
+//import org.apache.log4j.Logger;
 
 public class Util {
 
@@ -10,7 +13,7 @@ public class Util {
 		throw new IllegalStateException("Utiility Class");
 	}
 
-	protected static Logger log = Logger.getLogger(Util.class);
+	private static Logger log = LogManager.getLogger(Util.class);
 
 	public static void registarInfo(Class<?> clazz, TipoLog tipo, Object message) {
 		log = LogManager.getLogger(clazz);

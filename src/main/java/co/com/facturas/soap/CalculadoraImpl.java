@@ -6,8 +6,6 @@ import java.util.List;
 import javax.jws.WebService;
 
 import co.com.facturas.model.Datos;
-import co.com.facturas.util.TipoLog;
-import co.com.facturas.util.Util;
 
 @WebService(endpointInterface = "co.com.facturas.soap.CalculadoraInterface", name = "CalculadoraWS", serviceName = "CalculadoraSOAP", targetNamespace = "http://calculadora.facturas.com.co")
 public class CalculadoraImpl implements CalculadoraInterface {
@@ -25,9 +23,6 @@ public class CalculadoraImpl implements CalculadoraInterface {
 	@Override
 	public String leerDatos(Datos dato) {
 		arrayDatos.add(dato);
-		Util.registarInfo(CalculadoraImpl.class, TipoLog.DEBUG, dato.getDatos());
-		Util.registarInfo(Util.class, TipoLog.DEBUG, dato.getDatos());
-		
 		return "Número " + dato.getDatos() + " almacenado correctamente";
 	}
 
